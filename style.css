@@ -7,5 +7,55 @@
   --text-dark: slategrey; 
   --text-light: white;
 
+  --padding: 2rem;
+}
 
+body {
+  background-color: var(--bg);
+  font-family: system-ui;
+  font-size: clamp(1rem, 1.5vw,  30px) ;
+}
 
+main {
+  color: var(--text-light);
+  display: grid;
+  grid-template-columns:repeat(4, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+}
+
+.art1 {
+  background-color: var(--accent);
+  grid-column: 1/3;
+}
+
+.art2 {
+  background-color: var(--medium);
+}
+
+.art3 {
+  background-color: var(--light);
+  color: var(--text-dark);
+  grid-row: 2;
+}
+
+.art4 {
+  background-color: var(--dark);
+  grid-column: 2/4;
+}
+
+.art5 {
+  background-color: var(--light);
+  color: var(--text-dark);
+  grid-column: 4;
+  grid-row: 1/3;
+}
+
+article {
+  padding: var(--padding);
+  border-radius: 1rem;
+}
+
+h2 {
+  font-size: 1.5em;
+}
